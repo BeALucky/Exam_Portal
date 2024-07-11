@@ -1,0 +1,33 @@
+<mat-card>
+    <!-- <mat-list>
+        <div mat-subheader>All Categories</div>
+        @for (c of categories; track $index) {
+
+            <mat-list-item>
+                <div mat-line >{{c.title}}</div>
+                <div  >{{c.description}}</div>
+                <mat-divider></mat-divider>
+            </mat-list-item>
+        }
+    </mat-list> -->
+
+    <!-- <div mat-subheader>All Categories</div> -->
+    <h1 class="ml20 mt10">All Categories</h1>
+    <mat-list style="padding-top: 20px; ">
+        @for (c of categories; track $index) {
+        
+        <mat-list-item style="height: 100px; " > 
+            <mat-icon style=" ">category</mat-icon> 
+            <!-- {{c.title}} -->
+            <span class="ml10" style="font-weight: bold; text-transform: uppercase;">{{c.title}}</span>
+        
+            <div  style="  margin-left: 32px;" >{{c.description}}</div>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        }
+    </mat-list>
+
+    <div class="container text-center mt20 mb20">
+        <button mat-raised-button color="accent" routerLink="../add-category">Add new Category</button>
+    </div>
+</mat-card>

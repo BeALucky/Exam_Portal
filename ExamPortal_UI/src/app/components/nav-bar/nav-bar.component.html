@@ -1,0 +1,48 @@
+<!-- <p>nav-bar works!</p> -->
+<mat-toolbar color="primary">
+    <a 
+    routerLink="/" 
+    mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu_book</mat-icon>
+    </a>
+    <span>Exam Portal</span>
+    <span class="example-spacer"></span>
+
+    @if(!isLoggedIn){
+
+      <a routerLink="/login"
+      mat-icon-button class=" mr30" aria-label="Example icon-button with heart icon">
+      <mat-icon>login</mat-icon>
+    </a>
+
+    
+    <a 
+    routerLink="signup"
+    mat-icon-button class=" mr30" aria-label="Example icon-button with share icon">
+    <mat-icon>how_to_reg</mat-icon>
+    
+    <!-- Signup -->
+  </a>
+}
+@else{
+  <a 
+  style="margin-right: 10px;"
+  mat-icon-button class=" mr30" aria-label="Example icon-button with share icon"
+  routerLink="/admin/profile"
+  >
+  <!-- <mat-icon>how_to_reg</mat-icon> -->
+  
+  {{user.firstName}}
+  
+</a>
+
+
+  <a 
+  (click)="logout()"
+  mat-icon-button class=" mr30" aria-label="Example icon-button with share icon">
+  <!-- <mat-icon>how_to_reg</mat-icon> -->
+  
+  Logout
+</a>
+}
+  </mat-toolbar>
