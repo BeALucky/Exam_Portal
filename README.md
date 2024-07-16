@@ -20,7 +20,7 @@ Exam portal is a full stack application that enblaes users(teacher) to create qu
 <h4>Backend (Exam Backend)</h4>
 <ul>
   <li>Spring Boot 3</li>
-  <li>Spring Security 3</li>
+  <li>Spring Security</li>
   <li>JWT Token Authentication</li>
   <li>Spring Data JPA</li>
   <li>Lombok</li>
