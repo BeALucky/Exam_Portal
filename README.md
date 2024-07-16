@@ -11,3 +11,6 @@ Exam portal is a full stack application that enblaes users(teacher) to create qu
   <li>Timer is also implemented for quiz, test will automatically submit once the student exceeds the time limit.</li>
   
 </ul>
+
+<h3>Class Diagram</h3>
+<img src="screensorts/class_diagram.png" alt="Class Diagram">
