@@ -13,4 +13,4 @@ Exam portal is a full stack application that enblaes users(teacher) to create qu
 </ul>
 
 <h3>Class Diagram</h3>
-<img src="screensorts/class_diagram.png" alt="Class Diagram">
+<img src="Screensorts/Class-diagram.png" alt="Class Diagram">
